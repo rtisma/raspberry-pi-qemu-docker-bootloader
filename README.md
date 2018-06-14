@@ -49,4 +49,23 @@ ssh -p 7777 pi@localhost
 
 ```
 
+#### Installing JAVA
+
+1. Ensure you can ssh into your raspberrypi from your docker host. (i.e test with `ssh -p 7777 pi@localhost`)
+2. Download the tarball from oracles site
+3. Since you had to accept the terms, there is no static url that you can `wget` in your raspberrypi. To transfer the java tarball, simply `scp` it to you raspberryppi using the following command:
+
+```bash
+scp -P 7777 /path/to/any/file pi@localhost:/home/pi
+
+```
+
+#### Mounting proc
+
+If the `df -h` command doesnt work, its becaue proc isnt mounted. To mount it just run as root:
+
+```bash
+mount -t proc proc proc
+
+```
 
