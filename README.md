@@ -32,7 +32,7 @@ sudo apt install qemu-user-static
 
 #### SSH Server not working
 
-    As `root` run the following commands
+As `root` run the following commands
 
 ```bash
 
