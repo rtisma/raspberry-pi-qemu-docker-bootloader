@@ -6,22 +6,6 @@ docker pull $docker_image
 
 relative_image_path=$1
 
-
-#  relative_data_dir=$2
-#  echo "Relative Data Dir: $relative_data_dir"
-#  if [ -z $relative_data_dir ]; then
-#      echo "The data directory \"$relative_data_dir\" was not defined"
-#      exit 1
-#  elif [ ! -e $relative_data_dir ]; then
-#      echo "The data directory \"$relative_data_dir\" does not exist"
-#      exit 1
-#  elif [ ! -d $relative_data_dir ]; then
-#      echo "The data directory \"$relative_data_dir\" is not a directory"
-#      exit 1
-#  fi
-#  absolute_data_dir=`readlink -f $relative_data_dir`
-#  echo "Absolute Data Path: $absolute_data_dir"
-
 # check images exists
 if [ -z $relative_image_path ]; then
     echo "The image path \"$relative_image_path\" was not defined"
