@@ -65,6 +65,7 @@ scp -P 7777 /path/to/any/file pi@localhost:/home/pi
 If the `df -h` command doesnt work, its becaue proc isnt mounted. To mount it just run as root:
 
 ```bash
+cd /
 mount -t proc proc proc
 
 ```
