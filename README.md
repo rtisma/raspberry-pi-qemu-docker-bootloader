@@ -1,7 +1,7 @@
 # Raspberry PI QEMU Docker Bootloader
 
 ### Description 
-Simple script, that pulls a docker image, and uses an **existing** raspberry pi image (\*.img)
+Simple script, that pulls a docker image, and uses an **existing** raspberry pi image (\*.img). Based off of [ryankurte/docker-rpi-emu](https://github.com/ryankurte/docker-rpi-emu) 
 
 ### Prerequisites
 1. [Docker for linux](https://docs.docker.com/install/linux/docker-ce/)
